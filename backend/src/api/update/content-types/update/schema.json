@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "updates",
+  "info": {
+    "singularName": "update",
+    "pluralName": "updates",
+    "displayName": "update",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "headline": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "body": {
+      "type": "blocks"
+    },
+    "url": {
+      "type": "string"
+    },
+    "department": {
+      "type": "enumeration",
+      "enum": [
+        "Department of Social Work",
+        "Department of Anthropology"
+      ]
+    }
+  }
+}
